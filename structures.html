@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Structures</title>
+    <link rel="stylesheet" type="text/css" href="css/structures.css">
+</head>
+<body>
+    <header>
+                  <div class="main">
+            <div class="logo">
+                <img src="logo.2.png">
+        </div>
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+                <li><a href="about us.html">About Us</a></li>
+            </ul>
+        </div>
+      <h1 style="font-size: 35px; color: #fff; position: center;
+      color: #fff;top: 10%
+      left: 100%;
+      transform: translate(-16%,400%);
+      text-align: justify-all;">
+        C++ Structures</h1>
+    
+
+     <h4 style="font-size: 30px; color: #fff; transform: translate(-16%,600%);">
+         Structures.
+      </h4>
+
+    <p style="font-size: 20px;
+    color: #fff; transform: translate(-15%,270%);">
+        Structure is a collection of variables of different data types under a single name. It is similar to<br></br> a class in that, both holds a collecion of data of different data types.<br></br>
+    </p>
+
+    <h3 style="font-size: 30px; color: #fff; transform: translate(1%,700%);">
+        Example:
+    </h3>
+
+    <p style="font-size: 20px;
+    color: #fff; transform: translate(2%,240%);">
+        You want to store some information about a person: his/her name, citizenship<br></br> number and salary. You can easily create different variables name, citNo, salary to store<br></br> these information separately.
+    </p>
+ 
+    <h3 style="font-size: 30px; color: #fff; transform: translate(1%,900%);">
+       Declaring Structures in C++.
+    </h3> 
+
+    <p style="font-size: 20px;
+    color: #fff; transform: translate(2%,95%);">
+        The struct keyword defines a structure type followed by an identifier (name of the structure).<br></br>
+        Then inside the curly braces, you can declare one or more members (declare variables inside curly braces) of that structure. For example:<br></br>
+        struct Person<br></br>
+{
+    char name[50];<br></br>
+    int age;<br></br>
+    float salary;<br></br>
+
+};<br></br>
+
+Here a structure person is defined which has three members: name, age and salary.<br></br>
+    </p>
+
+    <h3 style="font-size: 30px; color: #fff; transform: translate(1%,1000%);">
+        Example Program:
+    </h3>
+
+    <p style="font-size: 20px;
+    color: #fff; transform: translate(2%,38%);">
+        #include < iostream><br></br>
+            using namespace std;<br></br>
+            
+            struct Person<br></br>
+            {<br></br>
+                char name[50];<br></br>
+                int age;<br></br>
+                float salary;<br></br>
+            };<br></br>
+            
+            int main()<br></br>
+            {<br></br>
+                Person p1;<br>
+                
+                cout << "Enter Full name: ";<br></br>
+                cin.get(p1.name, 50);<br></br>
+                cout << "Enter age: ";<br></br>
+                cin >> p1.age;<br></br>
+                cout << "Enter salary: ";<br></br>
+                cin >> p1.salary;<br></br>
+            
+                cout << "\nDisplaying Information." << endl;<br></br>
+                cout << "Name: " << p1.name << endl;<br></br>
+                cout << "Age: " << p1.age << endl;<br></br>
+                cout << "Salary: " << p1.salary;<br></br>
+            
+                return 0;<br></br>
+            }<br> </br>
+    </p>
+
+    <h3 style="font-size: 30px; color: #fff; transform: translate(1%,1100%);">
+        Output.
+    </h3>
+
+    <p style="font-size: 20px;
+    color: #fff; transform: translate(2%,130%);">
+        Enter Full name: Magdalena Dankova<br></br>
+        Enter age: 27<br></br>
+        Enter salary: 1024.4<br></br>
+
+        Displaying Information.<br></br>
+        Name: Magdalena Dankova<br></br>
+        Age: 27<br></br>
+        Salary: 1024.4<br></br>
+    </p>
+</header>
+</body>
+</html>

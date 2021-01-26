@@ -1,0 +1,79 @@
+<html><head><title>Conditions</title></head>
+
+
+<body>
+<h2>The else Statement</h2>
+<p>Use the <code class="w3-codespan">else</code> statement to specify a block of code to be executed if the condition is <code class="w3-codespan">false</code>.</p>
+<div class="w3-example">
+<h3>Syntax</h3>
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+
+</span>  <span class="javakeywordcolor" style="color:mediumblue">if</span> (<em>condition</em>) {<br>&nbsp; <em><span class="commentcolor" style="color:green">// block of code to be executed if the 
+  condition is true</span></em><br></span>} <span class="javakeywordcolor" style="color:mediumblue">else</span> { <br>&nbsp; <em><span class="commentcolor" style="color:green">// block of code to be executed 
+  if the condition is false</span></em><br>}<span class="javanumbercolor" style="color:red">
+</span><br><span class="javanumbercolor" style="color:red">
+</span>  </div>
+</div>
+<p>If the <code>condition</code> evaluates <code>true</code>,</p>
+<ul>
+	<li>the code inside the body of <code>if</code> is executed</li>
+	<li>the code inside the body of <code>else</code> is skipped from execution</li>
+</ul>
+<p>If the <code>condition</code> evaluates <code>false</code>,</p>
+<ul>
+	<li>the code inside the body of <code>else</code> is executed</li>
+	<li>the code inside the body of <code>if</code> is skipped from execution</li>
+</ul>
+<p>If the <code>condition</code> evaluates <code>true</code>,</p>
+<ul>
+	<li>the code inside the body of <code>if</code> is executed</li>
+	<li>the code inside the body of <code>else</code> is skipped from execution</li>
+</ul>
+<p>If the <code>condition</code> evaluates <code>false</code>,</p>
+<ul>
+	<li>the code inside the body of <code>else</code> is executed</li>
+	<li>the code inside the body of <code>if</code> is skipped from execution</li>
+</ul>
+<p><strong>Flow diagram of if-else</strong><br>
+<img loading="lazy" class="aligncenter size-full wp-image-6664" src="https://beginnersbook.com/wp-content/uploads/2017/08/If_else_flow_diagram-1.jpg" alt="If else flow diagram" width="400" height="400" srcset="https://beginnersbook.com/wp-content/uploads/2017/08/If_else_flow_diagram-1.jpg 400w, https://beginnersbook.com/wp-content/uploads/2017/08/If_else_flow_diagram-1-150x150.jpg 150w, https://beginnersbook.com/wp-content/uploads/2017/08/If_else_flow_diagram-1-300x300.jpg 300w" sizes="(max-width: 400px) 100vw, 400px"></p>
+
+<h3 id="example2">Example 1: C++ if...else Statement</h3>
+<pre class="cpp-exec" style="max-height: 600px;"><code class="cpp hljs"><span class="hljs-comment">// Program to check whether an integer is positive or negative</span>
+<span class="hljs-comment">// This program considers 0 as a positive number</span>
+
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+     <span class="hljs-keyword">int</span> number;
+
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"Enter an integer: "</span>;
+    <span class="hljs-built_in">cin</span> &gt;&gt; number;
+    <span class="hljs-keyword">if</span> (number &gt;= <span class="hljs-number">0</span>) {
+        <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"You entered a positive integer: "</span> &lt;&lt; number &lt;&lt; <span class="hljs-built_in">endl</span>;
+    }
+    <span class="hljs-keyword">else</span> {
+        <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"You entered a negative integer: "</span> &lt;&lt; number &lt;&lt; <span class="hljs-built_in">endl</span>;
+    }
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"This line is always printed."</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<p><strong>Output 1</strong></p>
+<pre><samp>Enter an integer: 4
+You entered a positive integer: 4.
+This line is always printed.</samp></pre>
+<div class="w3-example">
+<h3>Example 2</h3>
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  <span class="javakeywordcolor" style="color:mediumblue">int</span> time = <span class="javanumbercolor" style="color:red">22</span>;<br><span class="javakeywordcolor" style="color:mediumblue">if</span> (time &lt; <span class="javanumbercolor" style="color:red">10</span>) {<br>&nbsp; cout &lt;&lt; <span class="javastringcolor" style="color:brown">"Good 
+  morning."</span>;<br>} <span class="javakeywordcolor" style="color:mediumblue">else</span> <span class="javakeywordcolor" style="color:mediumblue">if</span> (time &lt; <span class="javanumbercolor" style="color:red">20</span>) {<br>&nbsp; cout &lt;&lt; <span class="javastringcolor" style="color:brown">"Good 
+  day."</span>;<br>} <span class="javakeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp; cout &lt;&lt; <span class="javastringcolor" style="color:brown">"Good evening."</span>;<br>}<br><span class="javanumbercolor" style="color:red">
+</span>  <span class="commentcolor" style="color:green">// Outputs "Good evening." </span></span></div>
+
+
+
+
+
+
+
+</div></body></html>

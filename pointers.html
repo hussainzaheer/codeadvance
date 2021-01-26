@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POINTERS:</title>
+    <link rel="stylesheet" type="text/css" href="css/pointers.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="logo.2.png">
+    </div>
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+                <li><a href="about us.html">About Us</a></li>
+            </ul>
+        </div>
+    <h1></h1>
+    
+    <h4 style="font-size: 30px; color: #fff; position: center; 
+    color: #fff;
+    top: 10%
+    left: 100%;
+    transform: translate(-16%,350%);
+    text-align: justify-all;
+}"> <u>Pointers:</u></h4>
+    
+
+    <p style="font-size: 20px;
+    color: #fff; transform: translate(-15%,300%);">
+        You learned from the previous chapter, that we can get the memory address of a variable by using the operator:
+    <br></p>
+
+    <h3 style="font-size: 30px; color: #fff; transform: translate(-16%,400%);">
+        Example
+    </h3>
+    <p style="font-size: 20px; color: #fff; transform: translate(1%,250%);">
+        <br></br>
+
+<br></br>
+cout << &food; // Outputs the memory address of food (0x6dfed4)<br></br>
+    </p>
+
+      <p style="font-size: 20px; color: #fff; transform: translate(1%,-0%);"><br>
+        A pointer however, is a variable that stores the memory address as its value.<br><br>
+
+A pointer variable points to a data type (like int or string) of the same type, and is created with the<br></br> * operator. The address of the variable you're working with is assigned to the pointer:<br>
+
+      <br></p>
+
+      <h3 style="font-size: 30px; color: #fff; transform: translate(1%,-0%);"><br>
+        Example:<br>
+    </h3>
+      
+    <p style="font-size: 20px; color: #fff; transform: translate(1%,-0%);"><br>
+        string food = "Pizza";  // A food variable of type string<br></br>
+<br>string* ptr = &food;    // A pointer variable, with the name ptr, that stores the address of food<br><br>
+
+// Output the value of food (Pizza)<br></br>
+<br></br>
+
+// Output the memory address of food (0x6dfed4)<br></br>
+cout << &food << "\n";<br></br>
+
+// Output the memory address of food with the pointer (0x6dfed4)<br></br>
+cout << ptr << "\n";<br></br>
+
+    </p>
+
+
+    <h3 style="font-size: 30px; color: #fff; transform: translate(1%,-0%);">
+        Example Explained
+    </h3>
+
+    <p style="font-size: 20px; color: #fff; transform: translate(1%,-0%);"><br>
+        Create a pointer variable with the name ptr, that points to a string variable, by using the asterisk<br></br> sign * (string* ptr). Note that the type of the pointer has to match the type of the variable you're working with.<br></br>
+
+Use the & operator to store the memory address of the variable called food, and assign it to the pointer.<br></br>
+
+Now, ptr holds the value of food's memory address.<br></br>
+    </p>
+
+    
+    <h3 style="font-size: 30px; color: #fff; transform: translate(1%,-0%);">
+       Tip:<br>
+    </h3>
+
+    <p style="font-size: 20px; color: #fff; transform: translate(1%,-0%);"><br>
+        There are three ways to declare pointer variables, but the first way is preferred:<br></br>
+        string* mystring; // Preferred<br></br>
+        string *mystring;<br></br>
+        string * mystring;<br></br>
+    </p>
+
+
+</header>
+       
+
+   
+
+</body>
+</html>
